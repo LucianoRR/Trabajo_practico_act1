@@ -1,3 +1,30 @@
+/*function calcularDescuento(precio,descuento){
+let resultado1=((descuento/100)*precio)
+let resultado2=precio-resultado1
+return resultado2
+}
+
+let precio= parseFloat(prompt("Ingresar precio: "));
+let descuento= parseFloat(prompt("Ingresar descuento: "));
+let precioFinal= calcularDescuento(precio,descuento);
+console.log("El precio final del producto es: "+precioFinal);
+*/
+
+function calcularDescuento(precio){
+const iva=21
+const descuento=10
+let resultado1=((iva/100)*precio)
+console.log("Los impuestos agregados son "+resultado1)
+let resultado2=precio+resultado1
+let resultado3=((descuento/100)*resultado2)
+console.log("El descuento de temporada es "+resultado3)
+let resultado4=resultado2-resultado3
+return resultado4
+}
+
+let precio= parseFloat(prompt("Ingresar precio: "));
+let precioFinal=calcularDescuento(precio);
+console.log("El precio final del producto es: "+precioFinal);
 /*function CalcularPrecio(precio,cuotas){
 let resultado1=precio/cuotas
 
